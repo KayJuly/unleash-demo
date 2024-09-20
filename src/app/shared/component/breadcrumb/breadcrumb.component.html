@@ -1,0 +1,84 @@
+<div class="page-title">
+  <div class="row">
+    <div class="col-xl-4 col-sm-7 box-col-3">
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="col-5 d-none d-xl-block">
+      <!-- Page Sub Header Start-->
+      <div class="left-header main-sub-header p-0">
+        <div class="left-menu-header">
+          <ul class="header-left">
+            <ng-container
+              *ngTemplateOutlet="
+                recursiveMenu;
+                context: { $implicit: horizontalList }
+              "
+            ></ng-container>
+            <ng-template #recursiveMenu let-horizontalList>
+              @for (item of horizontalList; track item) { @if (item.children) {
+              <li
+                [class.onhover-dropdown]="item.title"
+                [class.flyout-right]="
+                  (item.children && item.level === 1) ||
+                  (item.children && item.level === 2)
+                "
+              >
+                @if (item.type === 'sub') {
+                <a href="javascript:void(0)">{{ item.title }}</a>
+                <i class="fa fa-angle-right"></i>
+                } @else if (item.type === 'link') {
+                <a [routerLink]="item.path">{{ item.title }}</a>
+                <i class="fa fa-angle-right"></i>
+                } @else if (item.title) {
+                <span class="f-w-700">{{ item.title }}</span>
+                }
+                <ul
+                  [ngClass]="{
+                    'onhover-show-div left-dropdown':
+                      item.children && item.level !== 1 && item.level !== 2
+                  }"
+                >
+                  @if (item.children) {
+                  <ng-container
+                    *ngTemplateOutlet="
+                      recursiveMenu;
+                      context: { $implicit: item.children }
+                    "
+                  ></ng-container>
+                  }
+                </ul>
+              </li>
+              } @else {
+              <li>
+                <a [routerLink]="item.path">{{ item.title }} </a>
+              </li>
+              } }
+            </ng-template>
+          </ul>
+        </div>
+      </div>
+      <!-- Page Sub Header end -->
+    </div>
+    <div class="col-xl-3 col-sm-5 box-col-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a [routerLink]="'/users/guide'">
+            <app-common-svg-icon
+              [class]="'stroke-icon'"
+              [icon]="'stroke-home'"
+            ></app-common-svg-icon>
+          </a>
+        </li>
+        @if(breadcrumbs?.parentBreadcrumb){
+        <li class="breadcrumb-item">
+          {{ breadcrumbs?.parentBreadcrumb }}
+        </li>
+        } @if(breadcrumbs?.childBreadcrumb){
+        <li class="breadcrumb-item active">
+          {{ breadcrumbs?.childBreadcrumb }}
+        </li>
+        }
+      </ol>
+    </div>
+  </div>
+</div>

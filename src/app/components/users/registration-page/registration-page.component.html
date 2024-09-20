@@ -1,0 +1,263 @@
+<!-- Container-fluid starts-->
+<div class="container-fluid">
+  <div class="top-wrap">
+    <div class="row">
+      <!-- main starts-->
+      <div class="main-side col-xl-9 col-sm-12 box-col-12">
+        <blockquote class="blockquote mb-4">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </blockquote>
+        <form class="card">
+          <div class="card-header pb-0">
+            <h4 class="card-title mb-0">Register for membership</h4>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    disabled
+                    value="Readonly input here..."
+                    aria-label="disabled input example"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    disabled
+                    value="Readonly input here..."
+                    aria-label="disabled input example"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="mb-3">
+                  <label class="form-label">Phone</label>
+                  <input
+                    class="form-control"
+                    type="phone"
+                    disabled
+                    value="Readonly input here..."
+                    aria-label="disabled input example"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label class="form-label">Address</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Home Address"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="mb-3">
+                  <label class="form-label">City</label>
+                  <input class="form-control" type="text" placeholder="City" />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="mb-3">
+                  <label class="form-label">Postal Code</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    placeholder="ZIP Code"
+                  />
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="mb-3">
+                  <label class="form-label">Faculty</label>
+                  <select class="form-control btn-square">
+                    <option value="0">--Select--</option>
+                    <option value="1">Faculty 1</option>
+                    <option value="2">Faculty 2</option>
+                    <option value="3">Faculty 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Field</label>
+                  <input class="form-control" type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Field</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Field</label>
+                  <input class="form-control" type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Field</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div>
+                  <label class="form-label">Note</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Enter About your description"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer text-end">
+            <div class="d-flex flex-row-reverse bd-highlight btn-lg m-3">
+              <a
+                type="button"
+                placement="top"
+                class="btn btn-lg-x btn-air-primary btn-pill btn-secondary"
+                [routerLink]="['/users/orientation']"
+              >
+                Registrer
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- main ends-->
+
+      <!-- right side starts-->
+      <div class="right-side col-xl-3 box-col-3">
+        <div class="card p-s">
+          <div class="card-body">
+            <div class="d-flex gap-4 mb-4">
+              <div>
+                <img
+                  class="me-3 rounded-circle"
+                  src="../assets/images/user/user.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="f-w-600">KAY SHOJI</h4>
+                <p>1233456789</p>
+              </div>
+            </div>
+            <ul class="contact-list p-2">
+              <li class="d-flex mt-2 mb-4">
+                <span class="badge badge-info">Student</span>
+                <span class="badge badge-warning">Staff</span>
+                <span class="badge badge-success">Visitor</span>
+              </li>
+
+              <li class="d-flex align-items-center">
+                <i class="fa fa-envelope-o side-icon"></i>
+                <span class="p-2">kay.shoji&#64;auckland.ac.nz</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fa fa-phone side-icon"></i>
+                <span class="p-2">+64 21 345 678 </span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="fa fa-institution side-icon"></i>
+                <span class="p-2">Bachelor of science</span>
+              </li>
+            </ul>
+            <hr class="dotted" />
+
+            <ul class="contact-list mt-4">
+              <li class="d-flex align-items-center mb-2">
+                <span class="iconbg badge-light-info svg-wrap"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </span>
+                <span class="p-2">Member</span>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <span class="iconbg badge-light-success svg-wrap"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </span>
+                <span class="p-2">Orientation</span>
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <span class="iconbg badge-light-danger svg-wrap"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-check-circle"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </span>
+                <span class="p-2">Quiz</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- roght side ends-->
+    </div>
+  </div>
+</div>
+<!-- Container-fluid Ends-->

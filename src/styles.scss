@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../public/assets/scss/app.scss";
+
+.page-wrapper.horizontal-wrapper .page-header {
+  background-color: $primary-color;
+}
+
+.page-wrapper.horizontal-wrapper .page-body-wrapper .page-body {
+  margin-top: 70px;
+}
+
+.side-icon {
+  color: $theme-body-sub-title-color;
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+.btn-lg-x {
+  font-weight: 700;
+  font-size: 24px;
+}
