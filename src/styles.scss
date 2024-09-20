@@ -9,6 +9,14 @@
   margin-top: 70px;
 }
 
+.sidebar-left-wrapper {
+  border-right: 1px solid var(--recent-dashed-border);
+}
+.nav-progress {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+
 .side-icon {
   color: $theme-body-sub-title-color;
   font-size: 22px;
@@ -18,4 +26,17 @@
 .btn-lg-x {
   font-weight: 700;
   font-size: 24px;
+}
+
+.sidebar-left-wrapper {
+  border-right: 1px solid var(--recent-dashed-border);
+  padding: 0;
+}
+.sidebar-left-wrapper ul {
+  padding: 20px;
+}
+
+.sidebar-left-wrapper h6 {
+  color: var(--theme-default);
+  font-weight: 500;
 }

@@ -2,8 +2,135 @@
 <div class="container-fluid">
   <div class="top-wrap">
     <div class="row">
-      <!-- main starts-->
-      <div class="main-side col-xl-9 col-sm-12 box-col-12">
+      <!-- Left Sidebar starts-->
+      <div
+        class="col-12 col-md-3 col-xl-2 order-2 order-md-1 sidebar-left-wrapper"
+        id="sidebar-left"
+      >
+        <div class="card">
+          <ul role="tablist" class="sidebar-left-icons nav nav-pills">
+            <li class="nav-item ng-star-inserted">
+              <a class="nav-link active"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <span class="iconbg badge-light-danger svg-wrap">
+                      <svg class="stroke-icon">
+                        <use
+                          href="assets/svg/icon-sprite.svg#product-category"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Guide</h6>
+                  <p class="mb-0">details</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Membership registration</h6>
+                  <p class="mb-0">details</p>
+                </div></a
+              >
+            </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use href="assets/svg/icon-sprite.svg#advance"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Orientation</h6>
+                  <p class="mb-0">details</p>
+                </div></a
+              >
+            </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-project"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Quiz</h6>
+                  <p class="mb-0">details</p>
+                </div></a
+              >
+            </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-gallery"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Event Bookings</h6>
+                  <p class="mb-0">details</p>
+                </div></a
+              >
+            </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-button"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Event Booking Details</h6>
+                  <p class="mb-0">details</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Left Sidebar ends-->
+
+      <!-- Main starts-->
+      <div
+        class="col-12 col-md-6 col-xl-8 order-1 order-md-2"
+        id="main-content"
+      >
         <blockquote class="blockquote mb-4">
           <p>
             aaa Unleash Space’s Māori name is Kura Matahuna – the School of
@@ -51,7 +178,7 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Step 1 - Join Member
+                    Step 1 - Membership registration
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +191,6 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         class="feather feather-chevron-down svg-color"
-                        _ngcontent-ng-c1511804846=""
                       >
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
@@ -368,11 +494,11 @@
           </div>
         </div>
       </div>
-      <!-- main ends-->
+      <!-- Main ends-->
 
-      <!-- right side starts-->
-      <div class="right-side col-xl-3 box-col-3">
-        <div class="card p-s">
+      <!-- Right Sidebar starts-->
+      <div class="col-12 col-md-3 col-xl-2 order-3" id="sidebar-right">
+        <div class="card">
           <div class="card-body">
             <div class="d-flex gap-4 mb-4">
               <div>
@@ -384,19 +510,18 @@
               </div>
               <div class="flex-grow-1">
                 <h4 class="f-w-600">KAY SHOJI</h4>
-                <p>1233456789</p>
+                <p>ksho877</p>
               </div>
             </div>
             <ul class="contact-list p-2">
               <li class="d-flex mt-2 mb-4">
-                <span class="badge badge-info">Student</span>
-                <span class="badge badge-warning">Staff</span>
-                <span class="badge badge-success">Visitor</span>
+                <span class="badge bg-info">Student</span>
+                <span class="badge bg-warning">Staff</span>
+                <span class="badge bg-success">Visitor</span>
               </li>
-
               <li class="d-flex align-items-center">
                 <i class="fa fa-envelope-o side-icon"></i>
-                <span class="p-2">kay.shoji&#64;auckland.ac.nz</span>
+                <span class="p-2">kay.shoji.auckland.ac.nz</span>
               </li>
               <li class="d-flex align-items-center">
                 <i class="fa fa-phone side-icon"></i>
@@ -408,74 +533,12 @@
               </li>
             </ul>
             <hr class="dotted" />
-
-            <ul class="contact-list mt-4">
-              <li class="d-flex align-items-center mb-2">
-                <span class="iconbg badge-light-info svg-wrap"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </span>
-                <span class="p-2">Member</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <span class="iconbg badge-light-success svg-wrap"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </span>
-                <span class="p-2">Orientation</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                <span class="iconbg badge-light-danger svg-wrap"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-check-circle"
-                  >
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </span>
-                <span class="p-2">Quiz</span>
-              </li>
-            </ul>
           </div>
         </div>
+
+        <!-- Right Sidebar ends-->
       </div>
-      <!-- roght side ends-->
     </div>
   </div>
+  <!-- Container-fluid ends-->
 </div>
-<!-- Container-fluid Ends-->
