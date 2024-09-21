@@ -1,39 +1,18 @@
-<div class="d-flex align-items-center profile-media" (click)="isOpen =!isOpen">
-  <img class="b-r-25" src="../assets/images/dashboard/profile.png" alt="">
+<div class="d-flex align-items-center profile-media" (click)="isOpen = !isOpen">
+  <img class="b-r-25" src="../assets/images/dashboard/profile.png" alt="" />
   <div class="flex-grow-1 user">
-    <span>Helen Walter</span>
-    <p class="mb-0 font-nunito">Admin
-      <app-common-svg-icon [icon]="'header-arrow-down'"></app-common-svg-icon>
+    <span class="text-white">Kay Shoji</span>
+    <p class="mb-0 font-nunito text-white">
+      Staff
+      <app-common-svg-icon
+        [icon]="'header-arrow-down'"
+        [class]="'text-white'"
+      ></app-common-svg-icon>
     </p>
   </div>
 </div>
+
 <ul class="profile-dropdown onhover-show-div" [class.active]="isOpen">
-  <li>
-    <a href="javascript:void(0)">
-      <app-feather-icons [icon]="'user'"></app-feather-icons><span>Account </span>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:void(0)">
-      <app-feather-icons [icon]="'mail'"></app-feather-icons><span>Inbox</span>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:void(0)">
-      <app-feather-icons [icon]="'file-text'"></app-feather-icons>
-      <span>Taskboard</span>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:void(0)">
-      <app-feather-icons [icon]="'settings'"></app-feather-icons>
-      <span>Settings</span>
-    </a>
-  </li>
-  <li>
-    <a href="javascript:void(0)">
-      <app-feather-icons [icon]="'log-in'"></app-feather-icons>
-      <span>Log Out</span>
-    </a>
-  </li>
+  <li><a class="f-w-700" [routerLink]="">View account</a></li>
+  <li><a class="f-w-700" [routerLink]="">View history</a></li>
 </ul>
