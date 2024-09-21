@@ -1,152 +1,145 @@
 <!-- Container-fluid starts -->
 <div class="container-fluid">
   <div class="row">
-    <!-- Left side starts -->
-    <div class="col-xxl-3 col-xl-4">
-      <div class="md-sidebar">
-        <a class="btn btn-primary email-aside-toggle md-sidebar-toggle"
-          >Training filter</a
-        >
-        <div class="md-sidebar-aside job-sidebar">
-          <div
-            id="accordionoc"
-            class="default-according style-1 faq-accordion job-accordion"
-          >
-            <div class="row">
-              <div class="col-xl-12">
-                <div>
-                  <div class="card">
-                    <div class="card-header">
-                      <h5 class="mb-0">
-                        <button
-                          data-bs-toggle="collapse show"
-                          class="btn btn-link"
-                          aria-expanded="false"
-                        >
-                          Find Training
-                        </button>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseicon"
-                      class="collapse show"
-                      ng-reflect-collapsed="true"
-                    >
-                      <div class="card-body filter-cards-view animate-chk">
-                        <div class="job-filter">
-                          <div class="faq-form">
-                            <input
-                              type="text"
-                              placeholder="Search.."
-                              class="form-control"
-                            />
-                            <div class="search-icon" ng-reflect-icon="search">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-search search-icon"
-                              >
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line
-                                  x1="21"
-                                  y1="21"
-                                  x2="16.65"
-                                  y2="16.65"
-                                ></line>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="checkbox-animated mt-0 ng-star-inserted">
-                          <div class="learning-header">
-                            <span class="f-w-700">Courses</span>
-                          </div>
-                          <label class="d-block ng-star-inserted" for="chk-ani"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani"
-                              type="checkbox"
-                              name=""
-                            />3D Printer </label
-                          ><label
-                            class="d-block ng-star-inserted"
-                            for="chk-ani0"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani0"
-                              type="checkbox"
-                              name=""
-                            />Laser Cutter </label
-                          ><label
-                            class="d-block ng-star-inserted"
-                            for="chk-ani1"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani1"
-                              type="checkbox"
-                              name=""
-                            />Sewing Machine
-                          </label>
-                          <!--container-->
-                        </div>
-                        <div class="checkbox-animated mt-0 ng-star-inserted">
-                          <div class="learning-header">
-                            <span class="f-w-700">Semester</span>
-                          </div>
-                          <label class="d-block ng-star-inserted" for="chk-ani6"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani6"
-                              type="checkbox"
-                              name=""
-                            />Semester 1 2024</label
-                          ><label
-                            class="d-block ng-star-inserted"
-                            for="chk-ani7"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani7"
-                              type="checkbox"
-                              name=""
-                            />Semester 2 2024</label
-                          ><label
-                            class="d-block ng-star-inserted"
-                            for="chk-ani8"
-                            ><input
-                              class="checkbox_animated"
-                              id="chk-ani8"
-                              type="checkbox"
-                              name=""
-                            />Semester 3 2024</label
-                          ><!--container-->
-                        </div>
-                        <!--container--><button
-                          type="button"
-                          class="btn btn-primary text-center"
-                        >
-                          Filter
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+    <!-- Left Sidebar starts-->
+    <div
+      class="col-12 col-md-3 col-xl-2 order-3 order-md-1 sidebar-left-wrapper"
+      id="sidebar-left"
+    >
+      <div class="card">
+        <ul role="tablist" class="sidebar-left-icons nav nav-pills">
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use
+                      href="assets/svg/icon-sprite.svg#product-category"
+                    ></use>
+                  </svg>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Guide</h6>
+                <p class="mb-0">5 min</p>
+              </div></a
+            >
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Membership registration</h6>
+                <p class="mb-0">5 min</p>
+              </div></a
+            >
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use href="assets/svg/icon-sprite.svg#advance"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Orientation</h6>
+                <p class="mb-0">15 min</p>
+              </div></a
+            >
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use href="assets/svg/icon-sprite.svg#stroke-project"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Quiz</h6>
+                <p class="mb-0">10 min</p>
+              </div></a
+            >
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a class="nav-link active"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <span class="iconbg badge-light-danger svg-wrap">
+                    <svg class="stroke-icon">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-gallery"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Training Bookings</h6>
+                <p class="mb-0">5 min</p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use href="assets/svg/icon-sprite.svg#stroke-button"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Take Trainings</h6>
+                <p class="mb-0">60 min</p>
+              </div></a
+            >
+          </li>
+          <li class="nav-item ng-star-inserted">
+            <a id="detail-product-tab" class="nav-link"
+              ><div class="nav-rounded">
+                <div class="product-icons">
+                  <svg class="stroke-icon">
+                    <use href="assets/svg/icon-sprite.svg#stroke-button"></use>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="product-tab-content d-flex flex-column justify-content-center"
+              >
+                <h6 class="nav-progress mb-1">Feedback</h6>
+                <p class="mb-0">5 min</p>
+              </div></a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Left side ends -->
+    <!-- Left Sidebar ends-->
 
     <!-- Main start -->
-    <div class="col-xxl-9 col-xl-8 box-col-12">
+    <div class="col-12 col-md-6 col-xl-7 order-2">
       <div class="row">
         <div class="col-xl-12 ng-star-inserted">
           <div class="card">
@@ -432,5 +425,148 @@
       </div>
     </div>
     <!-- Main end -->
+
+    <!-- Right side starts -->
+    <div class="col-12 col-md-3 col-xl-3 order-1 order-md-3">
+      <div class="md-sidebar">
+        <a class="btn btn-primary email-aside-toggle md-sidebar-toggle"
+          >Training filter</a
+        >
+        <div class="md-sidebar-aside job-sidebar">
+          <div
+            id="accordionoc"
+            class="default-according style-1 faq-accordion job-accordion"
+          >
+            <div class="row">
+              <div class="col-xl-12">
+                <div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h5 class="mb-0">
+                        <button
+                          data-bs-toggle="collapse show"
+                          class="btn btn-link"
+                          aria-expanded="false"
+                        >
+                          Find Training
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseicon"
+                      class="collapse show"
+                      ng-reflect-collapsed="true"
+                    >
+                      <div class="card-body filter-cards-view animate-chk">
+                        <div class="job-filter">
+                          <div class="faq-form">
+                            <input
+                              type="text"
+                              placeholder="Search.."
+                              class="form-control"
+                            />
+                            <div class="search-icon" ng-reflect-icon="search">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-search search-icon"
+                              >
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line
+                                  x1="21"
+                                  y1="21"
+                                  x2="16.65"
+                                  y2="16.65"
+                                ></line>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="checkbox-animated mt-0 ng-star-inserted">
+                          <div class="learning-header">
+                            <span class="f-w-700">Courses</span>
+                          </div>
+                          <label class="d-block ng-star-inserted" for="chk-ani"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani"
+                              type="checkbox"
+                              name=""
+                            />3D Printer </label
+                          ><label
+                            class="d-block ng-star-inserted"
+                            for="chk-ani0"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani0"
+                              type="checkbox"
+                              name=""
+                            />Laser Cutter </label
+                          ><label
+                            class="d-block ng-star-inserted"
+                            for="chk-ani1"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani1"
+                              type="checkbox"
+                              name=""
+                            />Sewing Machine
+                          </label>
+                        </div>
+                        <div class="checkbox-animated mt-0 ng-star-inserted">
+                          <div class="learning-header">
+                            <span class="f-w-700">Semester</span>
+                          </div>
+                          <label class="d-block ng-star-inserted" for="chk-ani6"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani6"
+                              type="checkbox"
+                              name=""
+                            />Semester 1 2024</label
+                          ><label
+                            class="d-block ng-star-inserted"
+                            for="chk-ani7"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani7"
+                              type="checkbox"
+                              name=""
+                            />Semester 2 2024</label
+                          ><label
+                            class="d-block ng-star-inserted"
+                            for="chk-ani8"
+                            ><input
+                              class="checkbox_animated"
+                              id="chk-ani8"
+                              type="checkbox"
+                              name=""
+                            />Semester 3 2024</label
+                          >
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-primary text-center"
+                        >
+                          Filter
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right side ends -->
   </div>
 </div>

@@ -43,7 +43,7 @@
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
                   <h6 class="nav-progress mb-1">Membership registration</h6>
-                  <p class="mb-0">10 min</p>
+                  <p class="mb-0">5 min</p>
                 </div></a
               >
             </li>
@@ -60,7 +60,7 @@
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
                   <h6 class="nav-progress mb-1">Orientation</h6>
-                  <p class="mb-0">30 min</p>
+                  <p class="mb-0">15 min</p>
                 </div></a
               >
             </li>
@@ -79,7 +79,7 @@
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
                   <h6 class="nav-progress mb-1">Quiz</h6>
-                  <p class="mb-0">30 min</p>
+                  <p class="mb-0">10 min</p>
                 </div></a
               >
             </li>
@@ -121,6 +121,25 @@
                 </div></a
               >
             </li>
+            <li class="nav-item ng-star-inserted">
+              <a id="detail-product-tab" class="nav-link"
+                ><div class="nav-rounded">
+                  <div class="product-icons">
+                    <svg class="stroke-icon">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-button"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="product-tab-content d-flex flex-column justify-content-center"
+                >
+                  <h6 class="nav-progress mb-1">Feedback</h6>
+                  <p class="mb-0">5 min</p>
+                </div></a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -159,7 +178,8 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Step 1 - Membership registration
+                    <span class="badge badge-primary step">Step 1</span
+                    >Membership registration
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +232,8 @@
                     aria-expanded="true"
                     aria-controls="collapseTwo"
                   >
-                    Step 2 - Orientation
+                    <span class="badge badge-primary step">Step 2</span
+                    >Orientation
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +286,7 @@
                     aria-expanded="true"
                     aria-controls="collapseThree"
                   >
-                    Step 3 - Quiz
+                    <span class="badge badge-primary step">Step 3</span>Quiz
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -319,7 +340,8 @@
                     aria-expanded="true"
                     aria-controls="collapseFour"
                   >
-                    Step 4 - Boook trainings
+                    <span class="badge badge-primary step">Step 4</span
+                    >trainings bookinga
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -373,7 +395,8 @@
                     aria-expanded="true"
                     aria-controls="collapseFive"
                   >
-                    Step 5 - Take Trainings
+                    <span class="badge badge-primary step">Step 5</span>Take
+                    Trainings
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -427,7 +450,8 @@
                     aria-expanded="true"
                     aria-controls="collapseSix"
                   >
-                    Step 6 - Complete
+                    <span class="badge badge-primary step">Step 6</span>
+                    Feedback
                     <div class="svg-color" ng-reflect-icon="chevron-down">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -484,7 +508,7 @@
       >
         <div class="card height-equal">
           <div class="bg-primary card-header">
-            <h4 class="text-white">Let's start your journey</h4>
+            <h4 class="text-white">Let's start here</h4>
           </div>
           <div class="card-body">
             <p class="mb-0">
@@ -499,7 +523,7 @@
               class="btn btn-lg btn-secondary w-100 fw-bold"
               [routerLink]="['/users/registration']"
             >
-              Start Now
+              Start
             </a>
           </div>
         </div>
