@@ -3,8 +3,8 @@ import { GuidePageComponent } from "./guide-page/guide-page.component";
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 import { OrientationPageComponent } from "./orientation-page/orientation-page.component";
 import { QuizPageComponent } from "./quiz-page/quiz-page.component";
-import { BookingPageComponent } from "./booking-page/booking-page.component";
-import { BookingDetailsPageComponent } from "./booking-detail-page/booking-detail-page.component";
+import { TrainingListPageComponent } from "./training-page/training-list-page/training-list-page.component";
+import { DetailedCoursePageComponent } from "./training-page/detailed-course-page/detailed-course-page.component";
 
 export default [
   {
@@ -40,19 +40,12 @@ export default [
     },
   },
   {
-    path: "booking",
-    component: BookingPageComponent,
+    path: "training",
+    loadChildren: () =>
+      import("./training-page/training.routes").then((m) => m.trainingRoutes),
     data: {
-      title: "Booking",
-      breadcrumb: "Booking",
-    },
-  },
-  {
-    path: "booking-detail",
-    component: BookingDetailsPageComponent,
-    data: {
-      title: "Booking Detail",
-      breadcrumb: "Booking Detail",
+      title: "Training",
+      breadcrumb: "Training",
     },
   },
 ] as Routes;
