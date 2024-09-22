@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../public/assets/scss/app.scss";
 
+// page layout
 .page-wrapper.horizontal-wrapper .page-header {
   background-color: $primary-color;
 }
@@ -9,6 +10,7 @@
   margin-top: 70px;
 }
 
+// left side progress
 .sidebar-left-wrapper {
   border-right: 1px solid var(--recent-dashed-border);
 }
@@ -16,18 +18,11 @@
   font-weight: 700 !important;
   font-size: 16px !important;
 }
-
 .side-icon {
   color: $theme-body-sub-title-color;
   font-size: 22px;
   padding-right: 5px;
 }
-
-.btn-lg-x {
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .sidebar-left-wrapper {
   border-right: 1px solid var(--recent-dashed-border);
   padding: 0;
@@ -42,4 +37,37 @@
 }
 .sidebar-left-wrapper p {
   font-size: 14px;
+}
+
+// custom button for right side
+.btn-progress {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.btn-progress-s {
+  font-size: 14px;
+  background-color: #fff;
+}
+.btn-progress i {
+  font-weight: 700;
+  margin-left: 8px;
+}
+.btn-progress-s i {
+  margin-left: 8px;
+}
+
+// custom badge for step
+.badge.step {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 1em;
+}
+
+p.light-detail {
+  color: $light-txt-color;
+}
+
+a {
+  font-size: inherit !important;
 }
