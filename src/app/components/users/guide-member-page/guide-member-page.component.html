@@ -42,7 +42,7 @@
                 <div
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
-                  <h6 class="nav-progress mb-1">Membership registration</h6>
+                  <h6 class="nav-progress mb-1">Registration</h6>
                   <p class="mb-0">5 min</p>
                 </div></a
               >
@@ -97,7 +97,7 @@
                 <div
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
-                  <h6 class="nav-progress mb-1">Training Bookings</h6>
+                  <h6 class="nav-progress mb-1">Bookings</h6>
                   <p class="mb-0">5 min</p>
                 </div></a
               >
@@ -116,7 +116,7 @@
                 <div
                   class="product-tab-content d-flex flex-column justify-content-center"
                 >
-                  <h6 class="nav-progress mb-1">Take Trainings</h6>
+                  <h6 class="nav-progress mb-1">Trainings</h6>
                   <p class="mb-0">60 min</p>
                 </div></a
               >
@@ -542,9 +542,113 @@
           </a>
         </div>
 
-        <!-- Right Sidebar ends-->
+        <div class="card">
+          <div class="card-header">
+            <h4>My History</h4>
+          </div>
+          <div class="card-body">
+            <div class="collection-filter-block">
+              <ul class="pro-services">
+                <li>
+                  <div class="d-flex">
+                    <svg class="stroke-icon" width="24" height="24">
+                      <use href="assets/svg/icon-sprite.svg#stroke-form"></use>
+                    </svg>
+                    <div class="flex-grow-1">
+                      <h5>Registration</h5>
+                      <div class="d-flex">
+                        <p class="flex-grow-1">14 Sep 2024</p>
+                        <span class="badge badge-secondary">Done</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <svg class="stroke-icon" width="24" height="24">
+                      <use href="assets/svg/icon-sprite.svg#advance"></use>
+                    </svg>
+                    <div class="flex-grow-1">
+                      <h5>Orientation</h5>
+                      <div class="d-flex">
+                        <p class="flex-grow-1">14 Sep 2024</p>
+                        <span class="badge badge-secondary">Done</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <svg class="stroke-icon" width="24" height="24">
+                      <use
+                        href="assets/svg/icon-sprite.svg#stroke-project"
+                      ></use>
+                    </svg>
+                    <div class="flex-grow-1">
+                      <h5>Quiz</h5>
+                      <div class="d-flex">
+                        <p class="flex-grow-1">14 Sep 2024</p>
+                        <span class="badge badge-secondary">Done</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="d-flex justify-content-end mt-3"
+              [routerLink]="['/users/guide-member']"
+            >
+              View my history
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4>Popular courses</h4>
+          </div>
+          <div class="card-body">
+            <div class="card">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <a
+                    ng-reflect-router-link="/users/training/course"
+                    href="/users/training/course"
+                    ><img
+                      alt=""
+                      src="assets/images/faq/2.jpg"
+                      class="img-fluid sm-100-w"
+                  /></a>
+                </div>
+                <div class="blog-details-main">
+                  <h6 class="blog-bottom-details">3D Printer Training2</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <a
+                    ng-reflect-router-link="/users/training/course"
+                    href="/users/training/course"
+                    ><img
+                      alt=""
+                      src="assets/images/faq/2.jpg"
+                      class="img-fluid sm-100-w"
+                  /></a>
+                </div>
+                <div class="blog-details-main">
+                  <h6 class="blog-bottom-details">3D Printer Training</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Right Sidebar ends-->
+      <!-- Container-fluid ends-->
     </div>
   </div>
-  <!-- Container-fluid ends-->
 </div>
