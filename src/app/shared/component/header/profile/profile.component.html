@@ -13,6 +13,13 @@
 </div>
 
 <ul class="profile-dropdown onhover-show-div" [class.active]="isOpen">
-  <li><a class="f-w-700" [routerLink]="">View account</a></li>
-  <li><a class="f-w-700" [routerLink]="">View history</a></li>
+  <h5>Switch user</h5>
+  <li>
+    <a class="f-w-700" [routerLink]="['/users/guide']">New Member</a>
+  </li>
+  <li>
+    <a class="f-w-700" [routerLink]="['/users/guide-member']">Member</a>
+  </li>
+  <!-- <li><a class="f-w-700" [routerLink]="">View history</a></li>
+  <li><a class="f-w-700" [routerLink]="">New Member</a></li> -->
 </ul>

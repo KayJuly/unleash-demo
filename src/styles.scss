@@ -12,7 +12,7 @@
 
 // left side progress
 .sidebar-left-wrapper {
-  border-right: 1px solid var(--recent-dashed-border);
+  border-right: none;
 }
 .nav-progress {
   font-weight: 700 !important;
@@ -22,10 +22,6 @@
   color: $theme-body-sub-title-color;
   font-size: 22px;
   padding-right: 5px;
-}
-.sidebar-left-wrapper {
-  border-right: 1px solid var(--recent-dashed-border);
-  padding: 0;
 }
 .sidebar-left-wrapper ul {
   padding: 20px;
@@ -66,6 +62,7 @@
 
 p.light-detail {
   color: $light-txt-color;
+  font-size: 14px;
 }
 
 a {
