@@ -1,13 +1,13 @@
 import { Routes } from "@angular/router";
-import { GuidePageComponent } from "./guide-page/guide-page.component";
+import { DashboardPageComponent } from "./dashboard-page/dashboard-page.component";
 
 export default [
   {
-    path: "guide",
-    component: GuidePageComponent,
+    path: "dashboard",
+    component: DashboardPageComponent,
     data: {
-      title: "Guide",
-      breadcrumb: "Guide",
+      title: "Dashboard",
+      breadcrumb: "Dashboard",
     },
   },
 ] as Routes;

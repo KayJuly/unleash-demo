@@ -4,7 +4,7 @@ export const fullRoutes: Routes = [
   {
     path: "coming-soon",
     loadChildren: () =>
-      import("../../components/pages/coming-soon/coming-soon.routes").then(
+      import("../../components/utility/coming-soon/coming-soon.routes").then(
         (m) => m.default
       ),
   },

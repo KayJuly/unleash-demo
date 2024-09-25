@@ -4,8 +4,6 @@ import { GuideMemberPageComponent } from "./guide-member-page/guide-member-page.
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 import { OrientationPageComponent } from "./orientation-page/orientation-page.component";
 import { QuizPageComponent } from "./quiz-page/quiz-page.component";
-import { TrainingListPageComponent } from "./training-page/training-list-page/training-list-page.component";
-import { DetailedCoursePageComponent } from "./training-page/detailed-course-page/detailed-course-page.component";
 
 export default [
   {
