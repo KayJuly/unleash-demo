@@ -1,19 +1,21 @@
-import { NgClass, NgStyle } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
+import { HideNavScrollService } from '../../../services/hide-nav-scroll.service';
 import { LayoutService } from '../../../services/layout.service';
 import { NavService } from '../../../services/nav.service';
-import { BreadcrumbComponent } from '../../breadcrumb/breadcrumb.component';
+import { CustomizerComponent } from '../../customizer/customizer.component';
 import { FooterComponent } from '../../footer/footer.component';
-import { HeaderComponent } from '../../header/header.component';
+import { BreadcrumbComponent } from '../../breadcrumb/breadcrumb.component';
 import { SidebarComponent } from '../../sidebar/sidebar.component';
+import { HeaderComponent } from '../../header/header.component';
+import { NgClass, NgStyle } from '@angular/common';
 
 @Component({
     selector: 'app-content',
     templateUrl: './content.component.html',
     styleUrls: ['./content.component.scss'],
     standalone: true,
-    imports: [NgClass, NgStyle, HeaderComponent, SidebarComponent, BreadcrumbComponent, RouterOutlet, FooterComponent]
+    imports: [NgClass, NgStyle, HeaderComponent, SidebarComponent, BreadcrumbComponent, RouterOutlet, FooterComponent, CustomizerComponent]
 })
 
 export class ContentComponent {
@@ -21,6 +23,7 @@ export class ContentComponent {
   public innerWidth: number;
   
   constructor(
+    public hideNavService: HideNavScrollService, 
     public navService:NavService,
     public layout:LayoutService,
     private router: Router

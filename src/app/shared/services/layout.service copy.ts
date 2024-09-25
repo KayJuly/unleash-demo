@@ -4,37 +4,36 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class LayoutService {
-  public customizer: boolean = false;
+  public customizer: string = "";
   public margin: number = 0;
 
   // Without side bar
-  public config = {
-    settings: {
-      layout_type: "ltr",
-      layout_version: "light-only",
-      sidebar_type: "horizontal-wrapper",
-      icon: "stroke-svg",
-    },
-    color: {
-      primary_color: "#00467f",
-      secondary_color: "#C06240",
-    },
-  };
-
-  // With side bar
   // public config = {
   //   settings: {
-  //     layout_type: 'ltr',
-  //     layout_version: 'light-only',
-  //     sidebar_type: 'compact-wrapper',
-  //     icon: 'stroke-svg',
-  //       },
+  //     layout_type: "ltr",
+  //     layout_version: "light-only",
+  //     sidebar_type: "horizontal-wrapper",
+  //     icon: "stroke-svg",
+  //   },
   //   color: {
   //     primary_color: "#00467f",
   //     secondary_color: "#C06240",
   //   },
   // };
 
+  // With side bar
+  public config = {
+    settings: {
+      layout_type: 'ltr',
+      layout_version: 'light-only',
+      sidebar_type: 'compact-wrapper',
+      icon: 'stroke-svg',
+        },
+    color: {
+      primary_color: "#00467f",
+      secondary_color: "#C06240",
+    },
+  };
   constructor() {
     if (this.config.settings.layout_type == "box-layout") {
       document.body.classList.add("box-layout");
