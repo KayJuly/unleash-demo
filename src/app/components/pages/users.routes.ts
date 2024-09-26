@@ -4,6 +4,7 @@ import { GuideMemberPageComponent } from "./guide-member-page/guide-member-page.
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 import { OrientationPageComponent } from "./orientation-page/orientation-page.component";
 import { QuizPageComponent } from "./quiz-page/quiz-page.component";
+import {HistoryPageComponent} from "./history-page/history-page.component";
 
 export default [
   {
@@ -53,6 +54,14 @@ export default [
     data: {
       title: "Guide",
       breadcrumb: "Guide",
+    },
+  },
+  {
+    path: "history",
+    component: HistoryPageComponent,
+    data: {
+      title: "History",
+      breadcrumb: "History",
     },
   },
 ] as Routes;

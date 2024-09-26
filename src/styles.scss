@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../public/assets/scss/app.scss";
-
+// Typography
+span.details {
+  color: $body-grey
+}
 // page layout
 .page-wrapper.horizontal-wrapper .page-header {
   background-color: $primary-color;
 }
 
-.page-wrapper.horizontal-wrapper .page-body-wrapper .page-body {
+.page-wrapper.horizonital-wrapper .page-body-wrapper .page-body {
   margin-top: 70px;
 }
 
