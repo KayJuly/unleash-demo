@@ -8,9 +8,9 @@ span.details {
 .page-wrapper.horizontal-wrapper .page-header {
   background-color: $primary-color;
 }
-
-.page-wrapper.horizonital-wrapper .page-body-wrapper .page-body {
-  margin-top: 70px;
+// TODO
+.page-body > .container-fluid {
+  margin-top: -40px;
 }
 
 // left side progress
