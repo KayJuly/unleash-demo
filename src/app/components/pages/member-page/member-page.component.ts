@@ -5,7 +5,7 @@ import { RouterLink } from "@angular/router";
   selector: "app-guide-member-page",
   standalone: true,
   imports: [RouterLink],
-  templateUrl: "./guide-member-page.component.html",
-  styleUrl: "./guide-member-page.component.scss",
+  templateUrl: "./member-page.component.html",
+  styleUrl: "./member-page.component.scss",
 })
-export class GuideMemberPageComponent {}
+export class MemberPageComponent {}

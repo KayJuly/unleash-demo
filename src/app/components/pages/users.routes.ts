@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 import { GuidePageComponent } from "./guide-page/guide-page.component";
-import { GuideMemberPageComponent } from "./guide-member-page/guide-member-page.component";
+import { MemberPageComponent } from "./member-page/member-page.component";
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 import { OrientationPageComponent } from "./orientation-page/orientation-page.component";
 import { QuizPageComponent } from "./quiz-page/quiz-page.component";
@@ -49,11 +49,11 @@ export default [
     },
   },
   {
-    path: "guide-member",
-    component: GuideMemberPageComponent,
+    path: "member",
+    component: MemberPageComponent,
     data: {
-      title: "Guide",
-      breadcrumb: "Guide",
+      title: "Member",
+      breadcrumb: "Member",
     },
   },
   {

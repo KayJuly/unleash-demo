@@ -1,25 +1,25 @@
 <div class="d-flex align-items-center profile-media" (click)="isOpen = !isOpen">
-  <img class="b-r-25" src="../assets/images/dashboard/profile.png" alt="" />
-  <div class="flex-grow-1 user">
-    <span class="text-white">Kay Shoji</span>
-    <p class="mb-0 font-nunito text-white">
-      Staff
-      <app-common-svg-icon
-        [icon]="'header-arrow-down'"
-        [class]="'text-white'"
-      ></app-common-svg-icon>
-    </p>
-  </div>
+    <img class="b-r-25" src="../assets/images/dashboard/profile.png" alt=""/>
+    <div class="flex-grow-1 user">
+        <span class="text-white">Kay Shoji</span>
+        <p class="mb-0 font-nunito text-white">
+            Staff
+            <app-common-svg-icon
+                    [icon]="'header-arrow-down'"
+                    [class]="'text-white'"
+            ></app-common-svg-icon>
+        </p>
+    </div>
 </div>
 
 <ul class="profile-dropdown onhover-show-div" [class.active]="isOpen">
-  <h5>Switch user</h5>
-  <li>
-    <a class="f-w-700" [routerLink]="['/users/guide']">New Member</a>
-  </li>
-  <li>
-    <a class="f-w-700" [routerLink]="['/users/guide-member']">Member</a>
-  </li>
-  <!-- <li><a class="f-w-700" [routerLink]="">View history</a></li>
-  <li><a class="f-w-700" [routerLink]="">New Member</a></li> -->
+    <li>
+        Switch user
+    </li>
+    <li>
+        <a class="f-w-700" [routerLink]="['/users/guide']">New Member</a>
+    </li>
+    <li>
+        <a class="f-w-700" [routerLink]="['/users/member']">Member</a>
+    </li>
 </ul>
