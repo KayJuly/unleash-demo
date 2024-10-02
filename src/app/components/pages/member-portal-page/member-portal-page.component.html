@@ -1,0 +1,353 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Left Sidebar -->
+    <div class="col-12 col-md-3 col-xl-2 order-3 order-md-1" id="sidebar-left">
+      <div class="md-sidebar job-sidebar">
+        <div class="md-sidebar-aside">
+          <div class="file-sidebar">
+            <div class="card">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    <a [routerLink]="['/users/member']">
+                      <div class="btn btn-primary">
+                        <app-feather-icons [icon]="'home'"></app-feather-icons>
+                        My Portal
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/users/member']">
+                      <div class="btn btn-light">
+                        <app-feather-icons [icon]="'user'"></app-feather-icons>
+                        Account
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/users/history']">
+                      <div class="btn btn-light">
+                        <app-feather-icons [icon]="'clock'"></app-feather-icons>
+                        History
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/users/training']">
+                      <div class="btn btn-light">
+                        <app-feather-icons [icon]="'codepen'"></app-feather-icons>
+                        Training
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+                <ul>
+                  <li>
+                    <div class="pricing-plan">
+                      <h5>Got Questions? </h5>
+                      <p>Head Back to the Guide</p>
+                      <a [routerLink]="['/users/guide']">
+                        <div class="btn btn-primary btn-xs w-100 mt-4">User Guide</div>
+                      </a>
+                      <img class="bg-img"
+                           src="assets/images/dashboard/folder.png" alt="">
+                    </div>
+                  </li>
+                </ul>
+                <hr>
+                <ul>
+                  <li>
+                    <div class="btn btn-outline-primary">
+                      <app-feather-icons [icon]="'star'"></app-feather-icons>
+                      Test
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="col-12 col-md-6 col-xl-8 order-2" id="main-content">
+      <div class="row">
+        <!-- Membership -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header pb-0">
+              <h4>Membership Activated!</h4>
+            </div>
+            <div class="card-body orientation-content">
+              <div class="row pricing-col gy-4 gx-4 justify-content-center">
+                <div class="col-lg-6 col-sm-6 box-col-3">
+                  <div class="pricingtable p-4">
+                    <div class="pricingtable-header">
+                      <h3 class="title">Orientation</h3>
+                    </div>
+                    <div class="price-value"><span class="amount">Done</span></div>
+                    <ul class="pricing-content">
+                      <li>17 April 2023</li>
+                    </ul>
+                    <div class="pricingtable-signup"><a class="btn btn-primary btn-lg" href="javascript:void(0)">Watch
+                      it again</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 box-col-3">
+                  <div class="pricingtable p-4">
+                    <div class="pricingtable-header">
+                      <h3 class="title">Quiz</h3>
+                    </div>
+                    <div class="price-value"><span class="amount">Done</span></div>
+                    <ul class="pricing-content">
+                      <li>17 April 2023</li>
+                    </ul>
+                    <div class="pricingtable-signup"><a class="btn btn-primary btn-lg" href="javascript:void(0)">Try it
+                      again</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Training History -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4>Training History</h4>
+              <a [routerLink]="['/users/history']">See All</a>
+            </div>
+            <div class="card-body">
+              <!-- History content -->
+              <div class="table-responsive custom-scrollbar">
+                <table class="table">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <div class="user-data">
+                        <div>3D Printer Training</div>
+                        <span class="f-m-light">Semester 2</span>
+                      </div>
+                    </td>
+                    <td>Friday, 27 September 2024</td>
+                    <td><span class="badge badge-info">Booking</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-data">
+                        <div>Laser Cutter Training</div>
+                        <span class="details">Semester 1</span>
+                      </div>
+                    </td>
+                    <td>Friday, 7 April 2024</td>
+                    <td><span class="badge badge-secondary">Done</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-data">
+                        <div>3D Printer Training</div>
+                        <span class="f-m-light">Semester 2</span>
+                      </div>
+                    </td>
+                    <td>Monday, 12 September 2023</td>
+                    <td><span class="badge badge-secondary">Done</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-data">
+                        <div>Laser Cutter Training</div>
+                        <span class="details">Semester 1</span>
+                      </div>
+                    </td>
+                    <td>Friday, 11 April 2023</td>
+                    <td><span class="badge badge-secondary">Done</span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recommend courses -->
+      <div class="card">
+        <div class="card-header">
+          <h4>Recommend courses</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <a class="" [routerLink]="['/users/training/course']">
+                    <div class="card">
+                      <div class="blog-box blog-grid text-center product-box">
+                        <div class="product-img">
+                          <img alt=""
+                               src="assets/images/faq/2.jpg"
+                               class="img-fluid sm-100-w">
+                          <div class="product-hover">
+                            <ul>
+                              <li><i class="icon-link"></i></li>
+                              <li><i class="icon-import"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blog-details-main">
+                          <h6 class="blog-bottom-details"> 3D Printer Training Semester
+                            2 </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End of course block -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Sidebar -->
+    <div class="col-12 col-md-3 col-xl-2 order-1 order-md-3" id="sidebar-right">
+      <div class="card card-body bg-primary text-white order-1 order-md-1">
+        <div class="d-flex faq-widgets my-3">
+          <div class="flex-grow-1">
+            <h3 class="text-white">
+              Explore Upcoming Training Courses</h3>
+            <p>Discover your new challenge</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               class="feather feather-book-open">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+        <a type="button" class="btn btn-outline-primary btn-progress"
+           [routerLink]="['/users/training']"> Explore Training</a>
+      </div>
+    </div>
+  </div>
+</div>

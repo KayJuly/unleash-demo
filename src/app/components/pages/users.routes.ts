@@ -1,6 +1,6 @@
 import { Routes } from "@angular/router";
 import { GuidePageComponent } from "./guide-page/guide-page.component";
-import { MemberPageComponent } from "./member-page/member-page.component";
+import { MemberPortalPageComponent } from "./member-portal-page/member-portal-page.component";
 import { RegistrationPageComponent } from "./registration-page/registration-page.component";
 import { OrientationPageComponent } from "./orientation-page/orientation-page.component";
 import { QuizPageComponent } from "./quiz-page/quiz-page.component";
@@ -50,10 +50,10 @@ export default [
   },
   {
     path: "member",
-    component: MemberPageComponent,
+    component: MemberPortalPageComponent,
     data: {
-      title: "Member",
-      breadcrumb: "Member",
+      title: "Member Portal",
+      breadcrumb: "Member Portal",
     },
   },
   {
