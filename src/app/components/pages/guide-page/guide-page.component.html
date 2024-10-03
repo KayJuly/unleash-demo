@@ -227,7 +227,7 @@
           <div class="d-flex faq-widgets my-3">
             <div class="flex-grow-1">
               <h3 class="text-white">
-                let's start <br/>your creative journey </h3>
+                Let's start <br/>your creative journey </h3>
               <p>Easy to begin, simple to pause</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -240,9 +240,38 @@
           <a type="button" class="btn btn-outline-primary btn-progress"
              [routerLink]="['/users/registration']"> Start <i class="icon-arrow-right"></i> </a>
         </div>
+        <hr>
+        <p>You are already a member?</p>
+        <a type="button" class="btn btn-outline-primary btn-progress d-flex align-items-center"
+           [routerLink]="['/users/member']">
+          <app-feather-icons [icon]="'log-in'" style="margin-top: 5px;"></app-feather-icons>
+          <span class="ms-3">Member portal</span>
+        </a>
+        <!-- Modal comment-->
+        <div class="m-t-30 d-flex justify-content-end">
+          <a type="button" class="text-gray"
+             (click)="openModal(modalContent)">
+            <app-feather-icons [icon]="'message-square'"></app-feather-icons>
+          </a>
+        </div>
         <!-- Right Sidebar ends-->
       </div>
     </div>
   </div>
   <!-- Container-fluid ends-->
 </div>
+
+<!--Modal comment-->
+<ng-template #modalContent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modalTitle">Modal Title</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>Modal content goes here</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
+

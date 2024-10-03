@@ -199,9 +199,33 @@
               class="icon-close"></i>
           </a>
         </div>
+        <!-- Modal comment-->
+        <hr>
+        <div class="m-t-30 d-flex justify-content-end">
+          <a type="button" class="text-gray"
+             (click)="openModal(modalContent)">
+            <app-feather-icons [icon]="'message-square'"></app-feather-icons>
+          </a>
+        </div>
+        
       </div>
       <!-- Right Sidebar ends-->
     </div>
   </div>
 </div>
 <!-- Container-fluid Ends-->
+
+<!--Modal comment-->
+<ng-template #modalContent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modalTitle">Modal Title</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>Modal content goes here</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
+
