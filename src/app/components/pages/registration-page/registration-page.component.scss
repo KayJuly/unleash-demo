@@ -1,0 +1,10 @@
+.btn-next {
+  &:disabled, &.disabled {
+    color: inherit !important;
+    background-color: inherit !important;
+    border-color:inherit !important;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+
+}
