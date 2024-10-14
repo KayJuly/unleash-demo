@@ -109,12 +109,12 @@
           </div>
           <div class="card-body">
             <div class="blog-box blog-shadow">
-              <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/QF8Zr7_-2A8" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+              <div class="video-wrapper">
+                <div class="video-container">
+                  <div #youtubePlayer id="youtube-player"></div>
+                </div>
               </div>
             </div>
-            
             <div class="col-sm-12">
               <div class="card">
                 <div class="card-header">
@@ -188,9 +188,9 @@
             </svg>
           </div>
           
-          <a type="button" class="btn btn-outline-primary btn-progress" [routerLink]="['/users/quiz']">
-            Next<i class="icon-arrow-right"></i>
-          </a>
+          <button class="btn btn-outline-primary btn-progress btn-next" [disabled]="!isVideoCompleted" [routerLink]="['/users/quiz']">
+            Next <i class="feather feather-arrow-right"></i>
+          </button>
           <hr/>
           <a type="button" class="btn btn-outline-primary btn-progress" [routerLink]="['/users/guide']">Save<i
               class="icon-save"></i>
